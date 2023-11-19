@@ -1,4 +1,4 @@
-import {jwtDecode} from "jwt-decode";
+import jwtDecode from "jwt-decode";
 export const isUserAdmin = (user) => {
   if (!user) return;
   return user?.role?.includes("admin");
